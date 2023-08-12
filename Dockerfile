@@ -1,4 +1,6 @@
-FROM node:latest
+FROM node:lts-alpine
+
+ENTRYPOINT ["/bin/sh", "-c"]
 
 WORKDIR /app
 COPY . .
